@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex items-center justify-center min-h-screen bg-gray-600 text-white;
+}
+
+.drum-machine {
+  @apply border border-gray-900 bg-gray-800 p-4;
+}
+
+.drum-keys {
+  @apply w-64 flex justify-center flex-wrap ;
+}
+
+.drum-pad {
+  @apply p-4 text-2xl w-16 border border-white outline-none rounded-md text-white m-2 bg-gradient-radial transition from-gray-800 to-gray-900 hover:from-gray-900 active:translate-y-1;
+}
+
+.display {
+  letter-spacing: 2px;
+  @apply p-4 bg-slate-900 text-white uppercase font-medium;
+}
